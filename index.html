@@ -109,42 +109,43 @@
                 </div>
     </div>   
 <!-- openours -->
+<h2 class="heading">Openingsuren</h2>
   <div class="open">
-        <h2>Openingsuren</h2>
-        <table>
-                <tr>
-                    <th>week</th>
-                    <th>voormiddag</th>
-                    <th>namiddag</th>
-                    <th>avond</th>
+     
+        <table class="openhour">
+                <tr class="tablehead">
+                    <th>Week</th>
+                    <th>Voormiddag</th>
+                    <th>Namiddag</th>
+                    <th>Avond</th>
                 </tr>
                 <tr>
-                    <td>maandag</td>
-                    <td>-</td>
+                    <td>Maandag</td>
+                    <td>---</td>
                     <td class="af">op afspraak</td>
                     <td>17.00u-19.00u</td>
                 </tr>
                 <tr>
-                    <td>dinsdag</td>
-                    <td>-</td>
+                    <td>Dinsdag</td>
+                    <td>---</td>
                     <td class="af">op afspraak</td>
                     <td>16.00u-18.00u</td>
                 </tr>
                 <tr>
-                    <td>woensdag</td>
-                    <td>-</td>
+                    <td>Woensdag</td>
+                    <td>---</td>
                     <td>14.00u-16.00u</td>
                     <td class="af">op afspraak</td>
                 </tr>
                 <tr>
-                    <td>donderdag</td>
-                    <td>-</td>
+                    <td>Donderdag</td>
+                    <td>---</td>
                     <td class="af">op afspraak</td>
                     <td>16.00u-18.00u</td>
                 </tr>
                 <tr>
-                    <td>vrijdag</td>
-                    <td>-</td>
+                    <td>Vrijdag</td>
+                    <td>---</td>
                     <td class="af">op afspraak</td>
                     <td class="af">op afspraak</td>
                 </tr>
@@ -152,47 +153,80 @@
             <img src="" alt="">
   </div>
   <!-- review -->  
+  <h2 class="heading">
+      Patiënten Reviews</h2>
 <div id="review">
-    <h2>patiënten reviews voor B. De Bruyker</h2>
-    <div>
-        <img src="" alt="">
+    <div class="reviewbox">
+        <img src="girl (1).png" alt="">
         <h3>Ysabel J.</h3>
         <p>Dokter De Bruyker is in feite de enige dokter die mijn familie gevolgd heeft door de jaren heen. Zowel mijn moeder als mijn vader komen er nog. Los van elkaar. En hij vraagt vaak hoe het met mij gaat. En dat is al jaren geleden. </p>
-        <img src="" alt="">
+        <div class="star" >
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            
+
+        </div>
     </div>
-    <div>
-        <img src="" alt="">
+    <div class="reviewbox">
+        <img src="man.png" alt="">
         <h3>Iris W.</h3>
         <p>Liefste dokter, oprecht bezorgd, stelt vragen.
                 Het is niet gewoon binnen en buiten.  Je hebt het gevoel dat hij echt geeft om je gezondheid.</p>
-        <img src="" alt="">
+        <div class="star" >
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+           
+        </div>
     </div>
-    <div>
-        <img src="" alt="">
+    <div class="reviewbox">
+        <img src="girl.png" alt="">
         <h3>
                 Dorien L.</h3>
         <p>Gelukkig ben ik er nog niet zo veel geweest :-)
 
                 Maar als ik hier kom voel ik me op mijn gemak bij dokter De Bruyker. Hij is heel vriendelijk en joviaal.
                 Ookal zijn we verhuisd naar 2018, hij blijft mijn vaste huisdokter.</p>
-        <img src="" alt="">
+       <div class="star">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+            <img src="star.png" alt="">
+          
+       </div>
     </div>
 </div>
 
 <!-- location -->
-<div id="location">
-    <div></div>
-    <div>
+<h2 class="heading">Locatie</h2>
+<div id="location" class="location">
+   
+        <img src="Screenshot.png" alt="">
+    
+    
         <p>
-            Address:Keizerstraat 78 - 2000 Antwerpen
+            <span>Address:</span>
             <br>
-            Gsm: 0475 95 76 95 
-            <br>      
-            Tel: 03 233 19 96 
-            <br>      
-            Fax: 03 233 89 30
+            Keizerstraat 78 - 2000 Antwerpen
+            <br>
+            <span>Gsm:</span>
+            <br>
+             0475 95 76 95 
+            <br> 
+            <span>Tel:</span>  
+            <br>   
+             03 233 19 96 
+            <br>
+            <span>Fax: </span>  
+            <br>    
+            03 233 89 30
         </p>
-    </div>
+  
 </div>
 
     <!-- footer -->
@@ -200,7 +234,9 @@
         id="footer">
         <div class="footertop">
             <div class="footerbox1">
-                <h2>huisartspraktijk "de keizer"
+                <h2>huisartspraktijk
+                    <br>
+                    "de keizer"
                     <br>
                     Dr. Bart De Bruyker
                 </h2>
@@ -218,7 +254,7 @@
                         <br>      
                         Fax: 03 233 89 30
                     </li>
-                    <li>
+                    <li id="list4">
                         <h2>Social</h2>
                         Facebook
                         <br>
@@ -235,25 +271,22 @@
         <div class="footerbottom">
             <ul class="footerbox3">
                 <li><a href="">
-                        <img src="/assets/images/facebook.png"
+                        <img src="facebook.png"
                             alt="">
                     </a></li>
                 <li><a href="">
-                        <img src="/assets/images/whatsapp.png"
+                        <img src="whatsapp.png"
                             alt="">
                     </a></li>
                 <li><a href="">
-                        <img src="/assets/images/twitter.png"
+                        <img src="twitter.png"
                             alt="">
                     </a></li>
                 <li><a href="">
-                        <img src="/assets/images/instagram.png"
+                        <img src="instagram.png"
                             alt="">
                     </a></li>
-                <li><a href="">
-                        <img src="/assets/images/google-plus.png"
-                            alt="">
-                    </a></li>
+            
             </ul>
             <div class="footerbox2">
                 <ul>
@@ -261,20 +294,20 @@
                         <a href="#home">home</a>
                     </li>
                     <li>
-                        <a href="#button">Praktische info</a>
+                        <a href="#algemeen">Praktische info</a>
                     </li>
                     <li>
-                        <a href="#form">openuren</a>
+                        <a href="#open">openuren</a>
                     </li>
                     <li>
-                        <a href="#grid">Review</a>
+                        <a href="#review">Review</a>
                     </li>
                     <li id="list4">
-                        <a href="#grid">Locatie</a>
+                        <a href="#location">Locatie</a>
                     </li>
                 </ul>
             </div>
-            <div class="copyright">
+            <div id="copyright">
                 <p>&copy;EVI</p>
             </div>
         </div>

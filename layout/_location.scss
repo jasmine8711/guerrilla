@@ -1,0 +1,31 @@
+.location{
+    display: flex;
+    flex-flow: row nowrap;
+    @include basic(1010px,400px,0 auto,0); 
+    position: relative; 
+    top: -50px;
+    background:$skin;
+    img{
+        width: 65%;
+    }
+    p{
+        display: block;
+        width: 35%;
+        margin-top: 100px;
+        margin-left: 20px;
+        text-align: left;
+        font-family: $mainfont;
+        color: $white;
+
+        span{
+            display: block;
+            width: 150px;
+            font-weight: bold;
+            font-size: 20px;
+            color: $blue;
+            margin-bottom: 0;
+    
+        }
+    }
+
+}

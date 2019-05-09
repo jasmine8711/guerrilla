@@ -13,7 +13,7 @@
         @include vCenter;
         h2{
             display: block;
-            font-size: 3em;
+            font-size: 2em;
             margin-bottom: 5px;
             padding: 3px 16px 3px 16px;
             color: $white;
@@ -114,13 +114,14 @@
                 }
             }
         }
-        .copyright{
-            position: relative;
-            top: -10px;
-            text-align: center;
-            color: $lightgray;
-            font-size: 0.9em;
-        }
+      
     }
+}
+#copyright{
+    position: relative;
+    top: -10px;
+    text-align: center;
+    color: $white;
+    font-size: 0.9em;
 }
 

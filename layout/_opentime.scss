@@ -1,5 +1,40 @@
 .open{
-    width: 1010px;
+    width: 1006px;
     margin: 0 auto;
-    background: $skin;
+    background: $lightblue;
+    text-align: center;
+    position: relative;
+    top:-70px;
+    h2{
+        text-align: center;
+        width: 1006px;
+        height: 50px;
+        line-height: 50px;
+        color: $white;
+        border-bottom: 1px white solid;
+    }
+}
+.openhour{
+    padding: 2em;
+    @include vCenter;
+    color: white;
+    font-family: $mainfont;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    .af{
+        color: $blue;
+    }
+    th{
+        font-size: 20px;
+        color: $darkblue;
+    }
+    td{
+        border-bottom: 1px white solid; 
+        padding: 8px 40px;
+    }
+    .tablehead{
+        font-size: 1.5em;
+     
+    }
 }
