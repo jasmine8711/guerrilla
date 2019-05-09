@@ -1,0 +1,126 @@
+.footercontainer{
+    @include basic(100vw,50vh,0,0);
+    background-color: $skin;
+}
+.footertop{
+    
+    @include basic(100%,70%,0,0);
+    background-color: $skin;
+    @include row;
+    .footerbox1{
+        
+        flex-basis: 30vw;
+        @include vCenter;
+        h2{
+            display: block;
+            font-size: 3em;
+            margin-bottom: 5px;
+            padding: 3px 16px 3px 16px;
+            color: $white;
+            font-family: $mainfont;
+            border: 1px $white solid;
+            text-transform: uppercase;
+            }
+        p{
+            color: $white;
+            margin-top: 0;
+            font-family: $mainfont;
+        }
+        //responsive
+        @media only screen and (max-width: 576px){
+        margin-top: 8em;
+        @include vCenter;
+        }
+    }
+    .footerbox2{
+        @include vCenter;
+        color: $darkgray;
+        flex-basis: 70vw;
+        ul{
+            position: relative;
+            left:10em;
+            @include row;
+            li{
+                display: block;
+                height: 140px;
+                width: 140px;
+                @include list;
+                margin-right: 2em;
+                padding-right: 1em;
+                text-align: left;
+                border-right: 1px solid $white;
+                color: $white;
+            } 
+            @media only screen and (max-width: 576px){
+                position: relative;
+                left:1em;
+                display: flex;
+                flex-flow: row;
+            } 
+        }
+         
+    }
+    @media only screen and (max-width: 576px){
+        height: 520px;
+        }
+}
+#list4{
+    border: none;
+}
+.footerbottom{
+    @include basic(100vw,200px,0,0);
+    background-color: $darkgray;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+    .footerbox3{
+        display: block;
+        @include row;
+        @include basic(100%,100px,2em,0);
+        li{
+            @include list;
+            margin-right: 2em;
+            padding-right: 1em;
+            text-align: center;
+            a{
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+    .footerbox2{
+        position: relative;
+        left: -1em;
+        top: -2em;
+        ul{
+            @include row;
+            li{
+                @include list;
+                margin-right: 2em;
+                padding-right: 1em;
+                text-align: center;
+                border-right: 1px solid $white;
+                a{
+                    color: $white;
+                    font-family: $mainfont;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .copyright{
+            position: relative;
+            top: -10px;
+            text-align: center;
+            color: $lightgray;
+            font-size: 0.9em;
+        }
+    }
+}
+

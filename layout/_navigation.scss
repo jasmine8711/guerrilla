@@ -1,0 +1,73 @@
+/* navbar*/
+
+.nav{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    height: 3em;
+    width: 100vw;
+    color:$skin;
+    background-color: $white;
+    align-items: center;
+    font-family: $mainfont;
+
+
+    .nav-title{
+        display: block;
+        margin-top: 3px;
+        font-size: 2em;
+        padding-left:20px;
+        height: 100%;
+        width: 25%;
+        text-align: right;
+        background-image: url(./hospital.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 10px;
+        @media only screen and (max-width: 576px){
+            display: none;
+        }
+            
+        
+    }
+    .nav-bar{
+        position: absolute;
+        top: 0;
+        right:1em;
+        margin-top: 0;
+        margin-right: 1em;
+        width: 50%;
+        @include row;
+        @media only screen and (max-width: 576px){
+            display: none;
+        }
+    }
+}
+
+.nav-item{
+    @include list;
+    line-height: 3em;
+    padding-right: 2em;
+    padding-left: 1em;
+    text-align: left;
+    border-right: 1px $white solid;
+    background:$white;
+    
+}
+.nav-item:nth-child(1){
+    background: $blue;}
+.nav-item:nth-child(2){
+    background: $darkgray;}
+.nav-item:nth-child(3){
+    background: $darkblue;}
+.nav-item:nth-child(4){
+    background: $deepblue;}
+
+
+.nav-link{
+    @include upperLink;
+    color:$white;
+    font-family:$mainfont;
+}
