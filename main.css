@@ -472,7 +472,8 @@
   margin-top: 2em;
   position: relative;
   top: -70px;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; }
   @media only screen and (max-width: 414px) {
     .heading {
       position: relative;
@@ -515,11 +516,13 @@
       height: 4em;
       position: relative;
       left: 2em;
-      top: -1.5em; }
+      top: 1em; }
     #review .reviewbox p {
-      padding: 2em;
+      padding: 1em;
       font-family: "Raleway", sans-serif; }
   #review .star {
+    position: relative;
+    top: -2em;
     display: flex;
     flex-flow: row nowrap;
     width: 6em;
@@ -529,6 +532,41 @@
       height: 1em; }
 
 /* locatione */
+.localimg {
+  width: 1010;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background: linear-gradient(to bottom, #a4caea, white); }
+  .localimg img {
+    width: 290px;
+    height: 220px;
+    margin: 2em;
+    border: 3px white solid; }
+    @media only screen and (max-width: 414px) {
+      .localimg img {
+        width: 414px;
+        height: auto;
+        margin: 0; } }
+  @media only screen and (max-width: 414px) {
+    .localimg {
+      width: 414px;
+      margin: 0 auto;
+      position: relative;
+      top: 300px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      background: none; } }
+
 .location {
   display: flex;
   flex-flow: row nowrap;
@@ -537,8 +575,9 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
-  top: -50px;
-  background: #a1c3de; }
+  top: -180px;
+  background: #304295;
+  border: 3px white solid; }
   .location img {
     width: 65%; }
     @media only screen and (max-width: 414px) {
@@ -554,13 +593,17 @@
     align-items: center;
     margin-left: 2em; }
     .location .information span {
-      color: #0384ce;
+      color: #a4caea;
       text-transform: uppercase; }
+  @media only screen and (max-width: 414px) {
+    .location {
+      position: relative;
+      top: 500px; } }
 
 /* footer */
 .footercontainer {
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   margin: 0;
   padding: 0;
   background-color: #a1c3de; }
@@ -574,6 +617,11 @@
   margin: 0;
   padding: 0;
   background-color: #a1c3de;
+  background-image: url(./heart.png);
+  background-size: 39%;
+  background-position: bottom;
+  background-position-x: 0;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
@@ -582,7 +630,11 @@
   align-items: center;
   flex-grow: 1; }
   .footertop .footerbox1 {
-    flex-basis: 30vw;
+    position: relative;
+    top: -5em;
+    left: 10em;
+    margin: 1em;
+    flex-basis: 25vw;
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
@@ -591,12 +643,11 @@
     align-items: center; }
     .footertop .footerbox1 h2 {
       display: block;
-      font-size: 2em;
+      font-size: 1em;
       margin-bottom: 5px;
       padding: 3px 16px 3px 16px;
       color: white;
       font-family: "Raleway", sans-serif;
-      border: 1px white solid;
       text-transform: uppercase; }
     .footertop .footerbox1 p {
       color: white;
@@ -613,7 +664,7 @@
     align-content: center;
     align-items: center;
     color: #414143;
-    flex-basis: 70vw; }
+    flex-basis: 75vw; }
     .footertop .footerbox2 ul {
       position: relative;
       left: 10em;
@@ -627,7 +678,7 @@
       .footertop .footerbox2 ul li {
         display: block;
         height: 140px;
-        width: 140px;
+        width: 300px;
         list-style: none;
         margin-right: 2em;
         padding-right: 1em;
@@ -636,6 +687,9 @@
         color: white; }
         .footertop .footerbox2 ul li a {
           text-decoration: none; }
+        .footertop .footerbox2 ul li img {
+          width: 300px;
+          border: 3px white solid; }
   @media only screen and (max-width: 414px) {
     .footertop {
       display: none; } }

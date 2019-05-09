@@ -1,6 +1,7 @@
 .footercontainer{
-    @include basic(100vw,50vh,0,0);
+    @include basic(100vw,60vh,0,0);
     background-color: $skin;
+    
     @media only screen and (max-width: 414px){
         display: none;
         }
@@ -9,19 +10,27 @@
     
     @include basic(100%,70%,0,0);
     background-color: $skin;
+    background-image: url(./heart.png);
+    background-size: 39%;
+    background-position: bottom; 
+    background-position-x: 0; 
+    background-repeat: no-repeat;
+
     @include row;
     .footerbox1{
-        
-        flex-basis: 30vw;
+        position: relative;
+        top: -5em;
+        left:10em;
+        margin:1em ;
+        flex-basis: 25vw;
         @include vCenter;
         h2{
             display: block;
-            font-size: 2em;
+            font-size: 1em;
             margin-bottom: 5px;
             padding: 3px 16px 3px 16px;
             color: $white;
             font-family: $mainfont;
-            border: 1px $white solid;
             text-transform: uppercase;
             }
         p{
@@ -36,7 +45,7 @@
     .footerbox2{
         @include vCenter;
         color: $darkgray;
-        flex-basis: 70vw;
+        flex-basis: 75vw;
         ul{
             position: relative;
             left:10em;
@@ -44,13 +53,17 @@
             li{
                 display: block;
                 height: 140px;
-                width: 140px;
+                width: 300px;
                 @include list;
                 margin-right: 2em;
                 padding-right: 1em;
                 text-align: left;
                 border-right: 1px solid $white;
                 color: $white;
+                img{
+                    width: 300px;
+                    border: 3px white solid;
+                }
             } 
         }
          

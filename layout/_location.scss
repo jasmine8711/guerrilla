@@ -1,10 +1,39 @@
+.localimg{
+    @include basic(1010,400px,0 auto,0); 
+    position: relative; 
+    top: -50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background:linear-gradient(to bottom, $lightblue ,$white);
+    img{
+        width: 290px;
+        height: 220px;
+        margin: 2em;
+        border: 3px white solid;
+        @media only screen and (max-width: 414px){
+            width: 414px;
+            height: auto;
+            margin: 0; 
+        }
+    }
+    @media only screen and (max-width: 414px){
+        width: 414px;
+        margin: 0 auto;
+        position: relative; 
+        top: 300px;
+        @include vCenter;
+        background:none;
+    }
+}
 .location{
     display: flex;
     flex-flow: row nowrap;
     @include basic(1010px,400px,0 auto,0); 
     position: relative; 
-    top: -50px;
-    background:$skin;
+    top: -180px;
+    background:$darkblue;
+    border: 3px white solid;
     img{
         width: 65%;
         @media only screen and (max-width: 414px){
@@ -16,9 +45,13 @@
         @include vCenter;
         margin-left: 2em;
         span{
-            color: $blue;
+            color: $lightblue;
             text-transform: uppercase;
         }
+    }
+    @media only screen and (max-width: 414px){
+        position: relative; 
+        top: 500px;
     }
     }
 

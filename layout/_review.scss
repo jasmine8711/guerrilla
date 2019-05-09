@@ -6,6 +6,7 @@
     position: relative; 
     top: -70px;
     font-family: $mainfont;
+    text-transform: uppercase;
     @media only screen and (max-width: 414px){
         position: relative; 
         top: 0; 
@@ -46,14 +47,16 @@
             height: 4em;
             position: relative;
             left: 2em;
-            top:-1.5em;
+            top:1em;
         }
         p{
-            padding: 2em;
+            padding: 1em;
             font-family: $mainfont;
         }
     }
     .star{
+        position: relative;
+        top: -2em;
         display: flex;
         flex-flow: row nowrap;
         width: 6em;
