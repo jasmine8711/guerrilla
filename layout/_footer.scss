@@ -1,6 +1,9 @@
 .footercontainer{
     @include basic(100vw,50vh,0,0);
     background-color: $skin;
+    @media only screen and (max-width: 414px){
+        display: none;
+        }
 }
 .footertop{
     
@@ -26,11 +29,9 @@
             margin-top: 0;
             font-family: $mainfont;
         }
-        //responsive
-        @media only screen and (max-width: 576px){
-        margin-top: 8em;
-        @include vCenter;
-        }
+        @media only screen and (max-width: 414px){
+            display: none;
+            }  
     }
     .footerbox2{
         @include vCenter;
@@ -51,17 +52,11 @@
                 border-right: 1px solid $white;
                 color: $white;
             } 
-            @media only screen and (max-width: 576px){
-                position: relative;
-                left:1em;
-                display: flex;
-                flex-flow: row;
-            } 
         }
          
     }
-    @media only screen and (max-width: 576px){
-        height: 520px;
+    @media only screen and (max-width: 414px){
+        display: none;
         }
 }
 #list4{
@@ -76,6 +71,9 @@
     align-content: center;
     align-items: center;
     margin: 0 auto;
+    @media only screen and (max-width: 414px){
+        display: none;
+    }
     
     .footerbox3{
         display: block;
@@ -92,6 +90,9 @@
                     height: 35px;
                 }
             }
+        }
+        @media only screen and (max-width: 414px){
+            display: none;
         }
     }
     .footerbox2{
@@ -114,7 +115,9 @@
                 }
             }
         }
-      
+        @media only screen and (max-width: 414px){
+            display: none;
+        }
     }
 }
 #copyright{
@@ -123,5 +126,6 @@
     text-align: center;
     color: $white;
     font-size: 0.9em;
+    
 }
 

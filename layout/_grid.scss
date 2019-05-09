@@ -5,9 +5,12 @@
     top: -50px;
     box-sizing: border-box;
     border: 3px solid white;
-    @media only screen and (max-width: 576px){
-       clip-path: none; 
-       @include basic(100%,auto,0,0);
+    @media only screen and (max-width: 414px){
+        position: relative; 
+        top: 0;
+        display: flex;
+        flex-flow: column wrap;
+        @include basic(100%,auto,0,0);
     }
 }
 
@@ -42,6 +45,7 @@
     .link:hover{
         color: $darkblue;
     }
+    
 }
 .one{
     background:$blue;
@@ -58,4 +62,18 @@
 .four{
     background: $deepblue; 
     opacity: 0.8;
+}
+@media only screen and (max-width: 414px){
+   .box-item{
+       width: 100%;
+       text-align: center;
+       padding: 2em;
+       p{
+           @include vCenter;
+       width: 100%;
+        text-align: left;
+    
+       }
+   }
+
 }

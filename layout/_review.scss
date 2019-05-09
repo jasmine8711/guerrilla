@@ -6,6 +6,10 @@
     position: relative; 
     top: -70px;
     font-family: $mainfont;
+    @media only screen and (max-width: 414px){
+        position: relative; 
+        top: 0; 
+    }
 }
 #review{
     @include basic(1006px,auto,0 auto,0);
@@ -15,6 +19,13 @@
     justify-content: center;
     position: relative; 
     top: -70px;
+    @media only screen and (max-width: 414px){
+        position: relative; 
+        top:0;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
     .reviewbox{
         display: flex;
         flex-flow: column wrap;
@@ -23,6 +34,9 @@
         border-radius: 10px;
         margin:10px;
         flex-basis: 300px;
+        @media only screen and (max-width: 414px){
+            margin-bottom: 2em;
+        }
         h3{
             margin-left: 2em;
             color: $blue;
