@@ -39,5 +39,8 @@
  i change the color theme to blue,so that give people the feeling of Clean and wise.
  1. review.
  The reason i did that is the doctor is very old and have no social media that ppl can know more info from him, the review form patient can build a better impression for the doctor.
+ 
+ ## i use sass to write the css code.
+ 
  # Website design for Dr. Bart De Bruyker
 [De Keizer](https://jasmine8711.github.io/guerrilla/)
